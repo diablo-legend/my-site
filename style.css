@@ -1,0 +1,275 @@
+@font-face {
+  font-family: "Snowstorm Bold";
+  src: url("fonts/Snowstorm Bold.otf") format("opentype");
+}
+@font-face {
+  font-family: "Snowstorm";
+  src: url("fonts/Snowstorm.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Snowstorm Light";
+  src: url("fonts/Snowstorm Light.otf") format("opentype");
+}
+
+body {
+  background-color: #333;
+}
+
+/* Убираем подчеркивание у всех ссылок */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* профиль */
+.prof {
+  border-radius: 55px;
+  width: 487px;
+  height: 400px;
+  box-shadow: 0 8px 50px 0 rgba(0, 0, 0, 0.25);
+  background: #272727;
+  margin-top: 80px;
+  margin-left: 1270px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.prof img {
+  width: 288px;
+  height: 300px;
+  margin-top: -6%;
+}
+
+.prof p {
+  font-family: "Snowstorm", sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  margin-top: -10px;
+  color: white;
+}
+
+/* доп инфа под профилем */
+.iprof {
+  border-radius: 34px;
+  width: 487px;
+  height: 105px;
+  box-shadow: 0 8px 60px 0 rgba(0, 0, 0, 0.25);
+  background: #272727;
+  margin-left: 1270px;
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease;
+  text-decoration: none;
+}
+
+.iprof:hover {
+  transform: scale(1.1);
+}
+
+.iprof img {
+  margin-left: -380px;
+  position: fixed;
+}
+
+.iprof p {
+  font-family: "Snowstorm", sans-serif;
+  font-size: 30px;
+  color: white;
+}
+
+/*О бо мне*/
+.myi {
+  border-radius: 55px;
+  width: 1041px;
+  height: 309px;
+  box-shadow: 0 8px 50px 0 rgba(0, 0, 0, 0.25);
+  background: #272727;
+  margin-top: -310px;
+  margin-left: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.myi p {
+  font-family: "Snowstorm Light", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  color: #fff;
+  margin-left: 49px;
+  margin-top: -49px;
+}
+
+/*Проект*/
+.myp {
+  border-radius: 55px;
+  width: 1041px;
+  height: 200px;
+  box-shadow: 0 8px 50px 0 rgba(0, 0, 0, 0.25);
+  background: #272727;
+  margin-top: -560px;
+  margin-left: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease;
+  text-decoration: none;
+}
+
+.myp:hover {
+  transform: scale(1.009);
+}
+
+.b {
+  margin-left: 840px;
+  position: absolute;
+  text-decoration: none;
+}
+
+.a {
+  margin-left: -840px;
+  position: absolute;
+  text-decoration: none;
+}
+
+.a1 {
+  font-family: "Snowstorm", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  color: #fff;
+  margin-top: 10px;
+  text-decoration: none;
+}
+.b2 {
+  font-family: "Snowstorm Light", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  color: #fff;
+  margin-top: -10px;
+  text-decoration: none;
+}
+
+/*Заголовки*/
+.texth1 {
+  font-family: "Snowstorm", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  color: #fff;
+  margin-left: 80px;
+  margin-top: -370px;
+  position: fixed;
+}
+
+.texth2 {
+  font-family: "Snowstorm", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  color: #fff;
+  margin-left: -920px;
+  margin-top: -250px;
+  position: absolute;
+}
+
+/*соцсети*/
+.twich {
+  margin-top: -470px;
+  position: absolute;
+  margin-left: 30px;
+  transition: transform 0.3s ease;
+}
+
+.twich:hover {
+  transform: scale(1.1);
+}
+
+.yt {
+  margin-top: -470px;
+  position: absolute;
+  margin-left: 770px;
+  transition: transform 0.3s ease;
+}
+
+.yt:hover {
+  transform: scale(1.1);
+}
+
+.recrol {
+  margin-top: -470px;
+  position: absolute;
+  margin-left: 400px;
+  transition: transform 0.3s ease;
+}
+
+.recrol:hover {
+  transform: scale(1.1);
+}
+
+/* Скрываем сообщение на всех устройствах */
+#mobile-message {
+  display: none;
+  font-family: "Snowstorm", sans-serif;
+  font-size: 24px;
+  color: white;
+  text-align: center;
+  margin-top: 50%;
+}
+
+/* Показываем сообщение и скрываем контент на мобильных устройствах */
+@media only screen and (max-width: 768px) {
+  body > *:not(#mobile-message) {
+    display: none;
+  }
+
+  #mobile-message {
+    display: block;
+  }
+}
+
+/* Элемент для елочки */
+#tree-cursor {
+  position: fixed;
+  width: 30px;
+  height: 50px;
+  background: white;
+  border-radius: 15px 15px 0 0; /* Закругленные верхние углы */
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.7); /* Мягкое свечение */
+  transform: translate(-50%, -50%); /* Центрируем относительно курсора */
+  pointer-events: none; /* Чтобы клики проходили сквозь элемент */
+  z-index: 1000; /* Поверх всех элементов */
+}
+
+/* Дополнительные стили для создания эффекта елочки */
+#tree-cursor::before {
+  content: '';
+  position: absolute;
+  top: -20px; /* Располагаем перед элементом */
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 20px solid white;
+  transform: translateX(-50%);
+}
+
+#tree-cursor::after {
+  content: '';
+  position: absolute;
+  top: -40px; /* Располагаем перед элементом */
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  border-bottom: 30px solid white;
+  transform: translateX(-50%);
+}
+
